@@ -10,6 +10,22 @@ meteor add cclinical:hl-7-resource-datatypes
 ````
 
 ===============================
+#### DataTypes   
+
+This package currently implements the following HL7 FHIR datatypes:
+
+````bash
+Code
+HumanNameSchema
+ReferenceSchema
+PeriodSchema
+CodingSchema
+CodableConceptSchema
+Identifier
+ContactPointSchema
+AddressSchema
+````
+===============================
 #### Usage   
 
 This package is intended primarily to be used as a dependency in implementing other HL7 FHIR resource types within the Meteor ecosystem.  
