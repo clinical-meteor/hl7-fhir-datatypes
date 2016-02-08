@@ -36,5 +36,4 @@ Package.onUse(function(api) {
 Package.onTest(function(api) {
   api.use('tinytest');
   api.use('clinical:hl7-resource-patient');
-  api.addFiles('hl7-resource-patient-tests.js');
 });
