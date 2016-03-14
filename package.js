@@ -20,6 +20,7 @@ Package.onUse(function(api) {
   api.addFiles('lib/Coding.js');
   api.addFiles('lib/CodableConcept.js');
   api.addFiles('lib/Identifier.js');
+  api.addFiles('lib/Group.js');
 
 
   api.export('Code');
@@ -31,6 +32,7 @@ Package.onUse(function(api) {
   api.export('Identifier');
   api.export('ContactPointSchema');
   api.export('AddressSchema');
+  api.export('GroupSchema');
 });
 
 Package.onTest(function(api) {
