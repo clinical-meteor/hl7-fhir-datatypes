@@ -20,7 +20,7 @@ HumanNameSchema
 ReferenceSchema
 PeriodSchema
 CodingSchema
-CodableConceptSchema
+CodeableConceptSchema
 Identifier
 ContactPointSchema
 AddressSchema
