@@ -26,7 +26,7 @@ Package.onUse(function (api) {
   api.addFiles('lib/Quantity.js');
   api.addFiles('lib/Range.js');
   api.addFiles('lib/Reference.js');
-  api.addFiles('lib/RatioSchema.js');
+  api.addFiles('lib/Ratio.js');
 
 
   api.export('AddressSchema');
