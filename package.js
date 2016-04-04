@@ -26,6 +26,7 @@ Package.onUse(function (api) {
   api.addFiles('lib/Quantity.js');
   api.addFiles('lib/Range.js');
   api.addFiles('lib/Reference.js');
+  api.addFiles('lib/RatioSchema.js');
 
 
   api.export('AddressSchema');
@@ -43,6 +44,7 @@ Package.onUse(function (api) {
   api.export('GroupSchema');
   api.export('ConformanceSchema');
   api.export('RangeSchema');
+  api.export('RatioSchema');
 });
 
 Package.onTest(function (api) {
