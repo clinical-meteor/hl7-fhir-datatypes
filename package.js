@@ -47,7 +47,7 @@ Package.onUse(function (api) {
   api.export('ConformanceSchema');
   api.export('RangeSchema');
   api.export('RatioSchema');
-  api.export('lib/SampledDataSchema');
+  api.export('SampledDataSchema');
 
 });
 
