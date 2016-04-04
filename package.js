@@ -27,6 +27,8 @@ Package.onUse(function (api) {
   api.addFiles('lib/Range.js');
   api.addFiles('lib/Reference.js');
   api.addFiles('lib/Ratio.js');
+  api.addFiles('lib/SampledData.js');
+
 
 
   api.export('AddressSchema');
@@ -45,6 +47,8 @@ Package.onUse(function (api) {
   api.export('ConformanceSchema');
   api.export('RangeSchema');
   api.export('RatioSchema');
+  api.export('lib/SampledDataSchema');
+
 });
 
 Package.onTest(function (api) {
