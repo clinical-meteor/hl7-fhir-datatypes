@@ -40,7 +40,7 @@ dependencies:
     - cd helloworld && rm helloworld.*
     - cd helloworld && meteor add anti:gagarin@0.4.11 session meteor-platform clinical:theming clinical:default-theme clinical:router clinical:router-default-config clinical:active-layout clinical:active-layout-reset clinical:active-layout-pagescreen-config grove:less
     - cd helloworld && git clone http://github.com/clinical-meteor/hl7-resource-datatypes packages/hl7-resource-datatypes
-    - cd helloworld && meteor add clinical:hl7-resource-datatypes clinical:hl7-resource-datatypes
+    - cd helloworld && meteor add clinical:hl7-resource-datatypes 
     - cd helloworld/packages && ls -la
     - cd helloworld/packages/hl7-resource-datatypes && ls -la
     - cd helloworld/packages/hl7-resource-datatypes/tests && ls -la
