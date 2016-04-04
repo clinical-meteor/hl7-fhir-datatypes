@@ -28,6 +28,8 @@ Package.onUse(function (api) {
   api.addFiles('lib/Reference.js');
   api.addFiles('lib/Ratio.js');
   api.addFiles('lib/SampledData.js');
+  api.addFiles('lib/Signature.js');
+  api.addFiles('lib/Timing.js');
 
 
 
@@ -48,6 +50,8 @@ Package.onUse(function (api) {
   api.export('RangeSchema');
   api.export('RatioSchema');
   api.export('SampledDataSchema');
+  api.export('SignatureSchema');
+  api.export('TimingSchema');
 
 });
 
