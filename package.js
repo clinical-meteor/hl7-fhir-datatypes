@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-resource-datatypes',
-  version: '0.3.0',
+  version: '0.3.1',
   summary: 'HL7 FHIR DataTypes - Building blocks for FHIR Resources.',
   git: 'https://github.com/clinical-meteor/hl7-resource-datatypes',
   documentation: 'README.md'
@@ -17,14 +17,15 @@ Package.onUse(function (api) {
   api.addFiles('lib/Code.js');
   api.addFiles('lib/Coding.js');
   api.addFiles('lib/CodableConcept.js');
-  api.addFiles('lib/Period.js');
-  api.addFiles('lib/HumanName.js');
   api.addFiles('lib/ContactPoint.js');
-  api.addFiles('lib/Reference.js');
-  api.addFiles('lib/Identifier.js');
-  api.addFiles('lib/Group.js');
-  api.addFiles('lib/Quantity.js');
   api.addFiles('lib/Conformance.js');
+  api.addFiles('lib/Group.js');
+  api.addFiles('lib/HumanName.js');
+  api.addFiles('lib/Identifier.js');
+  api.addFiles('lib/Period.js');
+  api.addFiles('lib/Quantity.js');
+  api.addFiles('lib/Range.js');
+  api.addFiles('lib/Reference.js');
 
 
   api.export('AddressSchema');
@@ -41,6 +42,7 @@ Package.onUse(function (api) {
   api.export('ContactPointSchema');
   api.export('GroupSchema');
   api.export('ConformanceSchema');
+  api.export('RangeSchema');
 });
 
 Package.onTest(function (api) {
