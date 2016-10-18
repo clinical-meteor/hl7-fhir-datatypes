@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-resource-datatypes',
-  version: '0.5.0',
+  version: '0.5.6',
   summary: 'HL7 FHIR DataTypes - Building blocks for FHIR Resources.',
   git: 'https://github.com/clinical-meteor/hl7-resource-datatypes',
   documentation: 'README.md'
@@ -15,11 +15,15 @@ Package.onUse(function (api) {
   // ---------------------------------------------------------------------------
   // Base Resources
 
-  api.addFiles('lib/Base.js');
   api.addFiles('lib/Meta.js');
+  api.addFiles('lib/Base.js');
+  api.addFiles('lib/DomainResource.js');
+  api.addFiles('lib/Narrative.js');
 
-  api.export('BaseSchema');
   api.export('MetaSchema');
+  api.export('BaseSchema');
+  api.export('DomainResourceSchema');
+  api.export('NarrativeSchema');
 
 
   // ---------------------------------------------------------------------------
