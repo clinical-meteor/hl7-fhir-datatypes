@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-resource-datatypes',
-  version: '0.4.7',
+  version: '0.5.0',
   summary: 'HL7 FHIR DataTypes - Building blocks for FHIR Resources.',
   git: 'https://github.com/clinical-meteor/hl7-resource-datatypes',
   documentation: 'README.md'
@@ -10,6 +10,20 @@ Package.onUse(function (api) {
   api.versionsFrom('1.1.0.3');
 
   api.use('aldeed:simple-schema@1.3.3');
+
+
+  // ---------------------------------------------------------------------------
+  // Base Resources
+
+  api.addFiles('lib/Base.js');
+  api.addFiles('lib/Meta.js');
+
+  api.export('BaseSchema');
+  api.export('MetaSchema');
+
+
+  // ---------------------------------------------------------------------------
+  // Data Types
 
   api.addFiles('lib/Address.js');
   api.addFiles('lib/Annotation.js');
@@ -30,8 +44,6 @@ Package.onUse(function (api) {
   api.addFiles('lib/SampledData.js');
   api.addFiles('lib/Signature.js');
   api.addFiles('lib/Timing.js');
-
-
 
   api.export('AddressSchema');
   api.export('AnnotationSchema');
@@ -55,7 +67,7 @@ Package.onUse(function (api) {
 
 });
 
-Package.onTest(function (api) {
-  api.use('tinytest');
-  //api.use('clinical:hl7-resource-patient');
-});
+// Package.onTest(function (api) {
+//   api.use('tinytest');
+//   //api.use('clinical:hl7-resource-patient');
+// });
