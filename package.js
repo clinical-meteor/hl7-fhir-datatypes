@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-resource-datatypes',
-  version: '3.0.0',
+  version: '3.0.1',
   summary: 'HL7 FHIR DataTypes - Building blocks for FHIR Resources.',
   git: 'https://github.com/clinical-meteor/hl7-resource-datatypes',
   documentation: 'README.md'
