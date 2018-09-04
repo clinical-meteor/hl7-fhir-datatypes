@@ -10,7 +10,7 @@
 version: 2
 jobs:
   build:
-    working_directory: ~/clinical-meteor/hl7-resource-condition 
+    working_directory: ~/clinical-meteor/hl7-resource-datatypes 
     parallelism: 1
     shell: /bin/bash --login
 
@@ -109,16 +109,16 @@ jobs:
 
     - run: cd ../baseline && meteor npm install
     - run: cd ../baseline && meteor npm install react simple-schema 
-    - run: cd ../baseline && mkdir packages && cd packages && mkdir hl7-resource-condition 
-    - run: cp -R ./* ../baseline/packages/hl7-resource-condition 
-    - run: cd ../baseline/packages/hl7-resource-condition && pwd
+    - run: cd ../baseline && mkdir packages && cd packages && mkdir hl7-resource-datatypes 
+    - run: cp -R ./* ../baseline/packages/hl7-resource-datatypes 
+    - run: cd ../baseline/packages/hl7-resource-datatypes && pwd
     - run: cd ../baseline/packages && ls -la
 
     - run: cd ../baseline && npm i --save-dev selenium-webdriver@3.6.0 chromedriver
     - run: cd ../baseline && meteor add dispatch:mocha practicalmeteor:chai
-    - run: cd ../baseline && meteor add clinical:hl7-resource-condition 
+    - run: cd ../baseline && meteor add clinical:hl7-resource-datatypes 
     - run: cd ../baseline && mkdir imports 
-    - run: cp tests/Conditions.tests.js ../baseline/imports/
+    - run: cp tests/ResourceDatatypes.tests.js ../baseline/imports/
 
 
     #- run the app
