@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-resource-datatypes',
-  version: '4.0.3',
+  version: '4.0.4',
   summary: 'HL7 FHIR DataTypes - Building blocks for FHIR Resources.',
   git: 'https://github.com/clinical-meteor/hl7-resource-datatypes',
   documentation: 'README.md'
@@ -39,6 +39,7 @@ Package.onUse(function (api) {
   api.addFiles('lib/Group.js');
   api.addFiles('lib/HumanName.js');
   api.addFiles('lib/Identifier.js');
+  api.addFiles('lib/Money.js');
   api.addFiles('lib/Period.js');
   api.addFiles('lib/Quantity.js');
   api.addFiles('lib/Range.js');
@@ -57,6 +58,7 @@ Package.onUse(function (api) {
   api.export('ReferenceSchema');
   api.export('PeriodSchema');
   api.export('CodingSchema');
+  api.export('MoneySchema');
   api.export('CodeableConceptSchema');
   api.export('IdentifierSchema');
   api.export('ContactPointSchema');
