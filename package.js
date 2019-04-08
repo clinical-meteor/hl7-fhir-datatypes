@@ -1,6 +1,6 @@
 Package.describe({
   name: 'clinical:hl7-resource-datatypes',
-  version: '4.0.4',
+  version: '4.0.5',
   summary: 'HL7 FHIR DataTypes - Building blocks for FHIR Resources.',
   git: 'https://github.com/clinical-meteor/hl7-resource-datatypes',
   documentation: 'README.md'
@@ -23,7 +23,6 @@ Package.onUse(function (api) {
   api.export('BaseSchema');
   api.export('DomainResourceSchema');
   api.export('NarrativeSchema');
-
 
   // ---------------------------------------------------------------------------
   // Data Types
@@ -49,6 +48,12 @@ Package.onUse(function (api) {
   api.addFiles('lib/Signature.js');
   api.addFiles('lib/Timing.js');
 
+  api.addFiles('lib/Basic.js');
+  api.addFiles('lib/OperationDefinition.js');
+  api.addFiles('lib/StructureDefinition.js');
+  api.addFiles('lib/ValueSet.js');
+
+
   api.export('AddressSchema');
   api.export('AnnotationSchema');
   api.export('AttachmentSchema');
@@ -69,6 +74,11 @@ Package.onUse(function (api) {
   api.export('SampledDataSchema');
   api.export('SignatureSchema');
   api.export('TimingSchema');
+
+  api.export('BasicSchema');
+  api.export('OperationDefinitionSchema');
+  api.export('StructureDefinitionSchema');
+  api.export('ValueSetSchema');
 
   api.export('Address');
   api.export('Annotation');
